@@ -76,12 +76,13 @@ body > *{
   height:3.5rem;
   bottom:0;
   left:2.5rem;
-  rigth:2.5rem;
   max-width:1000px;
-  min-width:520px;
+  width:100%;
   opacity:0.95;
-  postion:absolute;
-  border-top:1px solid #666;
+  position:absolute;
+  border-top:1px solid rgba(0, 0, 0, 0.5);
+  margin-left: 0;
+  margin-right: 0;
 }
 
 topic{
@@ -125,7 +126,6 @@ topic.small{
 
 topic+p{
   font-size:115%;
-
 }
 
 ol{
@@ -194,7 +194,7 @@ a:hover{
   line-height:1.1;
 }
 
-/* Media queries */
+/* Media queries for fonts */
 @media all {html {font-size: 24px;}}
 @media all and (max-width:1000px){html {font-size: 24px;}}
 @media all and (max-width:960px){html {font-size: 23px;}}
@@ -208,14 +208,21 @@ a:hover{
 @media all and (max-width:640px){html {font-size: 15px;}}
 @media all and (max-width:600px){html {font-size: 14px;}}
 @media all and (max-width:560px){html {font-size: 13px;}}
-@media all and (max-width:520px){
-  html {
-    font-size: 12px;
-  }
+@media all and (max-width:520px){html {font-size: 12px;}}
+
+/*Media queries for layout*/
+@media all and (max-width:600px){
   body > * {
     margin: 2rem;
   }
   .content{
     padding:0;
+  }
+
+  .sidebar{
+    float:inherit;
+    position: inherit;
+    width: 100%;
+    text-align: left;
   }
 }
