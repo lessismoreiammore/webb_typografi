@@ -1,0 +1,221 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+html{
+  heigth:100%;
+}
+
+body{
+  padding: 0rem 0em 0rem 0em;
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+  max-width:1000px;
+  min-height:100%;
+/* enabling ligatures in text smaller than 20px emphasizes legibility over rendering speed and geometric precision  */
+  text-rendering:optimizeLegibility;
+  -moz-font-feature-settings: 'kern=1';
+-moz-font-feature-settings: 'kern' 1;
+-webkit-font-feature-settings: 'kern' 1;
+-o-font-feature-settings: 'kern' 1;
+-ms-font-feature-settings: 'kern' 1;
+/* setup kerning   */
+  font-feature-settings:'kern' 1;
+  -moz-font-feature-settings: 'liga=1';
+-moz-font-feature-settings: 'liga' 1;
+-webkit-font-feature-settings: 'liga' 1;
+-o-font-feature-settings: 'liga' 1;
+-ms-font-feature-settings: 'liga' 1;
+  border-top: 0px solid black;
+  border-bottom:0px solid black;
+  position: relative;
+  z-index:-10000;
+}
+
+body, p{
+  font-family: serif;
+}
+
+p{
+  margin-bottom:1em;
+  line-height:1.35;
+}
+
+body > *{
+  font-size:100%;
+  margin-left:11.5rem;
+  margin-right:2.5rem;
+}
+
+.content{
+  display:block;
+  padding:3rem 0 10rem 0;
+}
+
+.intro{
+  padding-bottom:2rem;
+}
+
+.sidebar{
+  margin-bottom:2em;
+  border-top: 2px solid black;
+  padding-top:6px;
+  display:block;
+  float:left;
+  position:absolute;
+  margin-left:0;
+  left:2.5rem;
+  width:7rem;
+  text-align:right;
+  clear:both;
+}
+
+.footer{
+  height:3.5rem;
+  bottom:0;
+  left:2.5rem;
+  rigth:2.5rem;
+  max-width:1000px;
+  min-width:520px;
+  opacity:0.95;
+  postion:absolute;
+  border-top:1px solid #666;
+}
+
+topic{
+  display:block;
+  font-family:sans-serif;
+  text-transform:uppercase;
+  font-size:190%;
+  line-height:1.1;
+  margin-top:3rem;
+  margin-bottom:3rem;
+  padding-top:0.02em;
+/*  how to hyphenate words when line-wrapping
+  words are not broken at line breaks, even if characters inside the words suggest line break points. Lines will only wrap at whitespace.
+  */
+  hyphens:none;
+  -moz-hyphens: none;
+-webkit-hyphens: none;
+-o-hyphens: none;
+-ms-hyphens: none;
+}
+
+topic.small{
+  font-family:sans-serif;
+  text-transform:uppercase;
+  padding-top:0em;
+  font-size:130%;
+}
+
+.sidebar topic{
+  font-family:inherit;
+  text-transform:inherit;
+  letter-spacing:inherit;
+  font-size:120%;
+  line-height:1.10;
+  margin-top:0.2rem;
+  margin-bottom:0.8rem;
+  font-weight:bolder;
+  border-top:0;
+  padding-top:0;
+}
+
+topic+p{
+  font-size:115%;
+
+}
+
+ol{
+  display:block;
+  list-style-type:decimal;
+      -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+li{
+  padding-left:0rem;
+  list-style-position:outside;
+/*  rules for displaying standard ligatures*/
+  font-feature-settings: 'liga' 1, 'ss01' 0;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+-moz-font-feature-settings: 'liga' 1, 'ss01' 0;
+-webkit-font-feature-settings: 'liga' 1, 'ss01' 0;
+-o-font-feature-settings: 'liga' 1, 'ss01' 0;
+-ms-font-feature-settings: 'liga' 1, 'ss01' 0;
+  margin-bottom:1em;
+  line-heigth:1.35;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+  font-style:italic;
+  transition-property:background;
+  -moz-transition-property: background;
+-webkit-transition-property: background;
+  transition-duration:0.2s;
+  -moz-transition-duration: 0.2s;
+-webkit-transition-duration: 0.2s;
+}
+
+a:hover{
+  background:#fbf3f3;
+  transition-property:background;
+  -moz-transition-property: background;
+-webkit-transition-property: background;
+  transition-duration:0.2s;
+  -moz-transition-duration: 0.2s;
+-webkit-transition-duration: 0.2s;
+  border-radius:8px;
+}
+
+.copyright{
+/*  small capitals from capitals  */
+  display:block;
+  padding:0.5em 0.1em 1em 0.1em;
+  height:100%;
+  vertical-align:inherit;
+  color: black;
+  opacity:0.5;
+  font-size:70%;
+  line-height:1.1;
+}
+
+.copyright a, .copyright span{
+  text-transform:uppercase;
+  font-style:normal;
+  font-size:70%;
+  line-height:1.1;
+}
+
+/* Media queries */
+@media all {html {font-size: 24px;}}
+@media all and (max-width:1000px){html {font-size: 24px;}}
+@media all and (max-width:960px){html {font-size: 23px;}}
+@media all and (max-width:920px){html {font-size: 22px;}}
+@media all and (max-width:880px){html {font-size: 21px;}}
+@media all and (max-width:840px){html {font-size: 20px;}}
+@media all and (max-width:800px){html {font-size: 19px;}}
+@media all and (max-width:760px){html {font-size: 18px;}}
+@media all and (max-width:720px){html {font-size: 17px;}}
+@media all and (max-width:680px){html {font-size: 16px;}}
+@media all and (max-width:640px){html {font-size: 15px;}}
+@media all and (max-width:600px){html {font-size: 14px;}}
+@media all and (max-width:560px){html {font-size: 13px;}}
+@media all and (max-width:520px){
+  html {
+    font-size: 12px;
+  }
+  body > * {
+    margin: 2rem;
+  }
+  .content{
+    padding:0;
+  }
+}
