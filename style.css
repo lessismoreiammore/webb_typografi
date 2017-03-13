@@ -124,6 +124,10 @@ topic+p{
   font-size:115%;
 }
 
+topic a{
+    font-style:normal;
+}
+
 ol{
   display:block;
   list-style-type:decimal;
