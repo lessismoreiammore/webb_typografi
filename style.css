@@ -56,6 +56,7 @@ body > *{
 
 .intro{
   padding-bottom:2rem;
+  font-family: sans-serif;
 }
 
 .sidebar{
@@ -84,6 +85,7 @@ body > *{
 topic{
   display:block;
   font-family:sans-serif;
+  font-weight: bold;
   text-transform:uppercase;
   font-size:190%;
   line-height:1.1;
@@ -115,7 +117,6 @@ topic.small{
   line-height:1.10;
   margin-top:0.2rem;
   margin-bottom:0.8rem;
-  font-weight:bolder;
   border-top:0;
   padding-top:0;
 }
@@ -125,13 +126,13 @@ topic+p{
 }
 
 topic a{
-    font-style:normal;
+  font-style:normal;
 }
 
 ol{
   display:block;
   list-style-type:decimal;
-      -webkit-margin-before: 1em;
+  -webkit-margin-before: 1em;
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
@@ -156,6 +157,7 @@ a{
   text-decoration:none;
   color:inherit;
   font-style:italic;
+  font-family: serif;
   transition-property:background;
   -moz-transition-property: background;
 -webkit-transition-property: background;
@@ -165,7 +167,7 @@ a{
 }
 
 a:hover{
-  background:#fbf3f3;
+  background:#FFE8D0;
   transition-property:background;
   -moz-transition-property: background;
 -webkit-transition-property: background;
