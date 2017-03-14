@@ -226,6 +226,10 @@ a:hover{
     padding:0;
   }
 
+  .block{
+      margin-bottom: 3rem;
+  }
+
   .sidebar{
     float:inherit;
     position: inherit;
